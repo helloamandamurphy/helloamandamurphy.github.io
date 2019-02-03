@@ -41,12 +41,12 @@ This helps me visualize my progress and what I have left to do. I also love chec
 
 ## 4) Keep track of your progress each day.
 I keep my progress on a sticky note on my screen that looks something like this:
-![](https://i.imgur.com/SmHxFaj.png)
+![](https://i.imgur.com/bGUtWH3.png)
 
 On it, I have my current progress, my goal for the week, and how many lessons I have to complete a day (I work four days a week.) I have the number of lessons I need to complete to reach 50% and 75% completion.
 
 ## 5) Count the number of lessons in a module. 
-Below those things on my sticky note, I have the number of lessons/labs (combined) for each module and what number of lessons and the percent I will have complete once I finish that section. I can often times convince myself to finish a section chasing a percentage I want to complete.
+Below those things on my sticky note, I have the number of lessons/labs (combined) for each module and the percent increase that I will attain by completing the module. I can often times convince myself to finish a section chasing a percentage I want to complete.
 
 ## 6) Open up every lesson/lab you want to complete.
 Something new I'm trying is opening every lesson/lab in a new tab I want to complete that day. I get to close out of them every time I complete a lesson/lab, and I'm less likely to open an unrelated tab (like my other blog) if I can see how much work I have left. 
