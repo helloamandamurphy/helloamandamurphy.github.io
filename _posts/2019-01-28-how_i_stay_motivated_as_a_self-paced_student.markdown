@@ -45,7 +45,7 @@ This helps me visualize my progress and what I have left to do. I also love chec
 
 ## 4) Keep track of your progress each day.
 I keep my progress on a sticky note on my screen that looks something like this:
-![](https://i.imgur.com/bGUtWH3.png)
+![](https://i.imgur.com/vmWzzVk.png)
 
 On it, I have my current progress, my goal for the week, and how many lessons I have to complete a day (I work four days a week.) I have the number of lessons I need to complete to reach 50% and 75% completion.
 
