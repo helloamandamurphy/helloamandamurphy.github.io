@@ -14,7 +14,11 @@ Okay, so first off, go to your Profile, which you can find by clicking the circl
 
 ![](https://i.imgur.com/VEn4rUO.png)
 
-I'm not sure how the progress numbers work. I believe that lessons completed includes labs, so that is how I calculate my progress. Take the smaller number and divide it by the larger, multiply it by 100, and you have a rough estimate of the percent of the course you have complete.
+I'm not sure how the progress numbers work. I believe that "Lessons Completed" includes labs, so that is how I calculate my progress. 
+
+*Small number / larger number x 100 = percent complete*
+
+Take the smaller number and divide it by the larger (695), multiply it by 100, and you have a rough estimate of the percent of the course you have complete.
 
 This doesn't tell you everything because some lessons and labs take longer than others, and it counts the portfolio projects as one lesson--these will likely take you a week or two. (I've only completed my first one, so I could be wrong there.)
 
@@ -30,7 +34,7 @@ Divide the percentage left to complete by the number of weeks you have to work. 
 
 I'm trying to reach 75%-100% completion by March 23. This is a little chart I made for myself in Google sheets. 
 
-![](https://i.imgur.com/TUkbN2t.png)
+![](https://i.imgur.com/rndK0Lu.png)
 
 ## 3) Make yourself a physical checklist to check off as you complete each module/chapter/lesson.
 I made myself a goal board and wrote a blog post about it over on my other blog, Intercoastals, so [click here](https://theintercoastals.com/blog/2019/1/4/making-a-goal-board-youll-actually-use) to check it out. 
