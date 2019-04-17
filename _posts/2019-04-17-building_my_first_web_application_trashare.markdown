@@ -6,7 +6,7 @@ permalink:  building_my_first_web_application_trashare
 ---
 
 
-I'm a big picture kind of gal. Sometimes it's helpful, and sometimes it's a hinderance. I often underestimate how long it realistically takes to accomplish a task, because I'm more concerned about what I'm going to do once it's done. If my educational coach is reading this, she's likely nodding her head.
+I'm a big picture kind of gal. Sometimes it's helpful, and sometimes it's a hindrance. I often underestimate how long it realistically takes to accomplish a task, because I'm more concerned about what I'm going to do once it's done. If my educational coach is reading this, she's likely nodding her head.
 
 When it came to this Sinatra project, I tried to work with my big-picture orientation in mind. I completed some of the Sinatra lessons, but I started feeling a little anxious, not quite understanding how so many different components fit together. So I jumped ahead and watched a Study Group video of Avi building out a skeleton repository. 
 
