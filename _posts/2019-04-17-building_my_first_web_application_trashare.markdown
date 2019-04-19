@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Building my first web application, Trashare"
+title:      "Building My First Web Application, "Trashare""
 date:       2019-04-17 15:44:47 -0400
 permalink:  building_my_first_web_application_trashare
 ---
