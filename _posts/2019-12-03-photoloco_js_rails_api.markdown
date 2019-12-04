@@ -26,7 +26,7 @@ So let’s get started:
 Here’s the basic idea for my application: I’m trying to start my own photography side business, and one of the big parts of shooting photography (outside of a studio) is finding good locations for photos. I wanted to create a site where users could share photographable locations with other photographers. Locations are made by one user, but photos of the location can be uploaded by multiple users.
 
 ## I Got 99 Problems, but JavaScript Ain't One
-*(Okay, maybe JavaScript is a couple) *
+*Okay, maybe JavaScript is a couple*
 
 1. I’m not sure why, but I still have a hard time starting an application on my computer, and pushing that existing project to GitHub. (Go ahead, judge me, it’s just not something I do very often.) [I found this page from GitHub helpful.](https://help.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line)
 
