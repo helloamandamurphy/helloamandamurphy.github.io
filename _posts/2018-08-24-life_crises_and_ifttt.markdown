@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Life Crises and IFTTT"
+title:      "Conditionals in Real Life and IFTTT"
 date:       2018-08-24 15:50:02 -0400
 permalink:  life_crises_and_ifttt
 ---
