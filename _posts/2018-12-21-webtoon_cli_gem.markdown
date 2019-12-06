@@ -1,22 +1,11 @@
 ---
 layout: post
 title:      "Webtoon CLI Gem"
-date:       2018-12-22 04:42:07 +0000
+date:       2018-12-21 23:42:08 -0500
 permalink:  webtoon_cli_gem
 ---
 
-
-I hit hurdle after hurdle when it came to this project.
-
-I started this class back in July while I was working and decided to quit working so I could be more aggressive working on this class. My last day was the Tuesday after Labor Day. 
-
-Within a week of my resignation, my mother-in-law who watches my son ended up leaving the state for a medical procedure and due to complications, she ended up returning the week after Thanksgiving. My husband is a full time graduate student pursuing a masters, I was supposed to be a full time student as well, but we have a toddler, and life is complicated and get in the way of your plans sometimes. 
-
-I work on this course every chance I get, between being a full time mom, a full time wife, a full time everything, and being a full time student almost always comes last, because the rest of it is easier for me. 
-
-I gave up on Object Oriented Ruby for a month after several negative interactions with technical coaches, and only came back when I realized I might not understand ActiveRecord if I didn't fully grasp OO Ruby.
-
-When I started this project, I was discouraged. The directions aren't great. They use a lot of terms we haven't seen before, and are long and complicated. If you're just starting your project, do your best not to get overwhelmed. Just start with Avi's CLI walkthrough video.
+When I started this project, I was discouraged. I was overwhelmed by the instructions and felt they used a lot of terms I hadn't seen before. If you're just starting your project, do your best not to get overwhelmed. Just start with Avi's CLI walkthrough video.
 
 Another snag I hit is that I received conflicting information as to if it was best to work on a local environment or use the IDE we use for all of the previous labs. I decided to set up a local environment, but I had no idea what I was doing. I ended up installing things incorrectly, and installing everything about three times. Once I did get everything set up, I had never used the bundle gem (name) to create a gem, and couldn't figure out why my classes and my methods weren't working. I didn't know there was a module. 
 
@@ -30,6 +19,6 @@ The next difficulty I ran into was getting the scraped information into my Comic
 
 Because my project differs so much from these two labs when it comes to the multiple URL's, I believe there is likely a more efficient way to write the code I have written, but for now, the CLI gem works, and I am open to advice from others on how to improve it. There seems to be a bit of a delay when the gem scrapes, initializes, and adds details to the comics before printing them out, which is probably my biggest concern that I'm hoping to address.
 
-For now I'm content, feeling accomplished, and looking forward to getting a break from OO Ruby. 
+For now I'm content, feeling accomplished, and looking forward to learning about SQL. 
 
 -A
