@@ -1,17 +1,17 @@
 ---
 layout: post
 title:      "My Six Month Flatiron School Anniversary"
-date:       2019-01-28 20:20:41 +0000
+date:       2019-01-28 15:20:42 -0500
 permalink:  my_six_month_flatiron_school_anniversary
 ---
 
 I set goals with my educational coach each month. I'm going to tell you a secret: I have not met a single one of my goals for my course progress. 
 
-At the beginning of July 2018, I started working as a government contractor, writing for the public relations department. The pay was good (not developer good) and I had a lot of time between interviews, phone calls, writing, and sending emails. When I interviewed for the position, I mentioned that I would be working on a programming certificate in my free time at work, and my employer found that agreeable. 
+At the beginning of July 2018, I started working as a government contractor, writing for the public relations department. I had a lot of time between interviews, phone calls, writing, and sending emails. When I interviewed for the position, I mentioned that I would be working on a programming certificate in my free time at work, and my employer found that agreeable. 
 
 I was admitted to Flatiron's Full-Stack Web Development course soon after I began my new job. I started 15 July 2018. I initially planned to be a part time student and work on the course during my downtime at work.
 
-About six weeks into working, my employer decided they were uncomfortable with me working on self development that would potentially lead to a new job, and I was told it was now inappropriate to work on my course at work. They preferred I spend my unused hours at work staring at a wall or scrolling through Facebook. 
+About six weeks into working, my employer decided they were uncomfortable with me working on self development that would potentially lead to a new job, and I was told it was now inappropriate to work on my course at work.
 
 Being a mom of a toddler, working 40 hours a week, and commuting almost two hours a day, I didn't really have another twenty hours lying around to work on my course. My husband and I sat down and discussed our priorities, and decided that we were willing to go without my income for a couple months so I could push through the course more rapidly, and start applying for jobs in tech on a shorter timeline.
 
@@ -21,4 +21,4 @@ To be honest, sticking with something this long with so much push back is unlike
 
 Progress is progress. I don't like making generalizations, but I think working diligently on a skill over a long period of time without seeing much progress is something my generation lacks desperately. We want instant gratification, and that's a need this class is really breaking me of. At least I can say, I'll never doubt my self discipline again. (Add that to my resume skills.) 
 
-My new goal is to complete this course by the end of March. Wish me luck. 
+My new goal is to complete this course by the end of summer. Wish me luck.
