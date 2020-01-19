@@ -1,46 +1,45 @@
 ---
 layout: post
 title:      "Poet Gone Programmer"
-date:       2018-07-16 17:27:17 +0000
+date:       2018-07-16 13:27:18 -0400
 permalink:  poet_gone_programmer
 ---
 
 
-I graduated from a liberal arts college. In my collegiate career, I had been a published poet, a produced playwright, and awarded for both my poetry and playwriting both locally and nationally. I had no doubt that I would get into a graduate program or get a job straight out of college. I had been raised with the mentality that a college degree would open the gates to employment. 
+Oh hey! I'm Amanda.
 
-I encountered a harsh reality after graduation, when I was unemployed for two years. I would send out two job applications a week for months, but no one wanted to hire a B.A. in English, and the companies for which I had previously worked, like Starbucks, no longer wanted to hire me because I was now overqualified. Family and friends made remarks labeling me as lazy, lacking work ethic, and posted comments on my social media feeds asking, "Isn't it time for you to get a job?" I developed housebound anxiety and was crippled by fear of outside criticism. 
+Thanks for finding your way to my site. I thought I would do a quick introduction about myself before I start sharing technical posts.
 
-Eventually, I was hired at a local tapas restaurant. I was ashamed to go back into food service, an industry I had worked in throughout high school and college, but I took stock in being employed. I later left that job to work an unarmed security position, then left that position after my husband and I moved to a different state. I applied for technical writing positions, hoping that my degree would get me a position in a more practical writing position, but the entry level positions required three years of experience I didn't have. I ended up substitute teaching at a private high school, until we moved to Indiana.
+I'm an online self-paced web development student at Flatiron School, a wife to a grad student, and a boy mom to a toddler and a Maine Coon cat.
 
-My husband, who had served in the Marines for five years, had worked in the tech field around programmers, and taught himself a couple coding languages, had worked in government contracting for two years before he decided to go back to school at Indiana University to study UX/UI. We both saw the move to Indiana as a reset button, and I started pursuing other career options. 
+I started studying code with Flatiron School in July 2018, after working in the service industry for eleven years, ranging from selling elephant ears at rodeos to working at a state favorite steakhouse to managing fifteen housekeepers at a hotel in downtown Indianapolis. 
 
-First, I thought I wanted to be a nurse. I applied to a nursing program at a community college, and was accepted, but I felt no joy when I saw my acceptance letter. I only felt dread. I decided that nursing was not the right career path for me, and in the meantime, I began working at a hotel in town. 
+I have a bachelors in creative writing, and am an awarded, published, and produced poet and playwright. These days most of my writing is for [Intercoastals ](https://theintercoastals.com/), an online publication I run with my husband, but I always have several projects on my mind and up my sleeve. I also [started my own photography business last year](https://theintercoastals.com/lilacwest), and it's a hobby / side hustle I really enjoy.
 
-I liked several aspects of hospitality--the high demand for employees and the ability to find work in any city in the world was very appealing to me. Unfortunately, the work life balance was non-existent and for someone with a family, consistently working 10-14 hours multiple days a week lead me to the end of my rope. 
+My husband, Ries, and I met and graduated from DePauw University, both as creative writing majors. We survived a five year Marine enlistment and a deployment together, and worked as defense contractors for a couple years before we decided to return to school.
 
-Hospitality was not working. While I have always been good for a job--I grew up on a farm, have always been an extremely hard worker, and can assimilate new skills very quickly--but I finally got to a point where I needed to find a job that was good *for me.*
+Ries is studying Human-Computer Interaction and Design (HCI/d) at Indiana University in Bloomington, Indiana while I'm learning to code. We've almost always worked in the same field, but in different positions--we like being able to talk about work without ever being in competition. He graduates in May, so we're both applying to jobs this spring, and I can't wait to see where we end up.
 
-I started thinking about and discussing with my husband what was important to me in a career as well as my strengths and weaknesses.
+Ries is actually the person who introduced me to programming. He had learned a couple languages when he was in the military and had several friends who were programmers. I had no idea what coding / programming was until early 2018. One day I came home from work and was telling him about my ideal job, and things I liked doing (which included my unnatural love for assembling IKEA furniture) and he said, "You're never going to believe it, but I think you might be a programmer."
 
-"You're not going to believe me, but I think you'd be a good back-end developer."
+After that, I began experimenting with code on Codecademy, Udemy, and Grasshopper and couple months later, I applied for a scholarship and admission to Flatiron School. When I got my admission email I cried. I didn't know much, but I knew it was a good fit.
 
-What? We had been friends with programmers. We went out to eat with people who wore those nerdy shirts with coding jokes that only programmers understood. One of our friends was the mad scientist of programmers--he would code all day and night and forget to sleep and eat, until we called to check on him. *I* was one of *them*? 
+Getting through the Flatiron School curriculum took me a long time as a stay at home mom with a working grad student as a husband, but it's without a doubt my greatest accomplishment--outside of making a tiny person, which was honestly, a lot less work. 
 
-"I tried it. I just don't have the mind for it. You either get it or you don't." 
+I am currently working on my final project (building a React application with a Rails API back-end) and I'll begin revising my resume and projects, creating a portfolio page, and applying to junior developer positions very soon.
 
-So I set about to find out if I was person who got it, or a person who didn't get it. 
+Outside of writing code, some of my other interests include: non-toxic beauty, skin, and home products; story driven video games; holistic health and functional medicine; working out / movement in general; horror / crime fiction / thriller books; mythology, folklore, and ghost stories; digital comics; music; and Walt Disney World. 
 
-I did some experimentation on Codecademy, completed lessons on Grasshopper, and started some courses on Udemy. 
+If you want to know more about those interests, you should check out Intercoastals ([this article is a good starting point.](https://theintercoastals.com/articles/2020/1/13/about-us).)
 
-I got it. 
+I think that's all I can think of for now, but if you want to connect on other platforms, I'll leave my social links below.
 
-I found the Flatiron School's Online Web Developer course on Instagram, and something clicked. I had heard of Flatiron years ago, because I have followed Karlie Kloss since I was a teenager and she was just starting her modeling career. I don't make it a habit of following the lives of celebrities, but Karlie had always lingered in the periphery. I had always taken an interest in her "Kode with Klossy" program, and had always been disappointed I was outside the age limit for the course. 
+-A
 
-I had a hard time thinking this was just coincidence, so I did my research on the program, and one day I got an email about the "Women Take Tech" scholarship. I went to apply for the scholarship and unknowingly applied for the Online Web Developer program too. This was something I had planned to do, but I was still trying to summon the courage for.
-
-Shortly after, I completed my interview and received my acceptance. And here I am! 
-
-I am so excited to be here, taking this course through the Flatiron School, with like-minded individuals, who may have started careers in other fields and found their way here. 
-
-And hey, in some weird twist of fate, Karlie Kloss and I will end up being alumnae from the same institution. 
+**Connect with Me**
+[GitHub](https://github.com/helloamandamurphy)
+[Intercoastals](https://theintercoastals.com/)
+[Instagram](https://www.instagram.com/intercoastals/)
+[LinkedIn](https://www.linkedin.com/in/helloamandamurphy)
+[Twitter](https://twitter.com/babiescatscode)
 
