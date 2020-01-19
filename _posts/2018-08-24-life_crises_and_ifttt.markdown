@@ -46,4 +46,12 @@ Hope that helps!
 
 -A
 
+***
+
+**Connect with Me**
+[GitHub](https://github.com/helloamandamurphy)
+[Intercoastals](https://theintercoastals.com/)
+[Instagram](https://www.instagram.com/intercoastals/)
+[LinkedIn](https://www.linkedin.com/in/helloamandamurphy)
+[Twitter](https://twitter.com/babiescatscode)
 
