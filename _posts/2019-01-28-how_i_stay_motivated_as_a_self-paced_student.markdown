@@ -7,6 +7,7 @@ permalink:  how_i_stay_motivated_as_a_self-paced_student
 
 
 I’ve been pursuing a full-stack web development certification through Flatiron School since last July. I wanted to share some of the tips I’ve learned over the past nine months.
+
 ***
 
 ## 1. MAKE SURE YOUR LEARNING ENVIRONMENT ENCOURAGES PRODUCTIVITY. 
