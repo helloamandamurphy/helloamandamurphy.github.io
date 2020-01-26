@@ -11,10 +11,12 @@ permalink:  photoloco_js_rails_api
 
 # Summary
 I started my own photography business this fall, and one of the large parts of being a photographer is finding good locations for taking photos. For this project, I wanted to create a site where users could share photographable locations with other photographers. Locations are made by one user, but a location can have multiple photos uploaded by multiple users.
+
 ***
 
 # Languages and Tools Used
 Ruby, Ruby on Rails API, PostgreSQL, ActiveRecord, JSON, Object-Oriented JavaScript, AJAX, HTML, CSS, Sass
+
 ***
 
 # Features
@@ -30,14 +32,17 @@ Ruby, Ruby on Rails API, PostgreSQL, ActiveRecord, JSON, Object-Oriented JavaScr
 
 1) I’m not sure why, but I still have a hard time starting an application on my computer, and pushing that existing project to GitHub. (Go ahead, judge me, it’s just not something I do very often.) 
 [I found this page from GitHub helpful.](https://help.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line)
+
 ***
 
 2) The second issue I ran into wasn’t code related--I wanted users to be able to save locations without addresses, but wasn’t sure if it was better to use longitude and latitude coordinates vs. plus codes vs. anything else.
 
 I couldn’t find any information that was conclusive, so I ran a poll on my Twitter. Longitude and Latitude won, so that’s what I went with to start out. (And if I find a better answer at a later date, I can change it.)
+
 ***
 
 3) The next thing I had to consider was how to save longitude and latitude into the database. [I found this article very helpful](https://stackoverflow.com/questions/38469142/migration-with-a-decimal-number-with-2-trailing-digits) and I also thought [this one](https://stackoverflow.com/questions/159255/what-is-the-ideal-data-type-to-use-when-storing-latitude-longitude-in-a-mysql) was informative--it deals with how precise longitude and latitude is depending on how many decimal places are involved (you’ll have to scroll down a couple answers to find it.)
+
 ***
 
 4) I am using PostgreSQL as a database for this project, so I also ran into this error when I tried to run `rails db:migrate`:
@@ -47,9 +52,11 @@ rails aborted!
 ActiveRecord::NoDatabaseError: FATAL:  database "photoloco_development" does not exist
 ```
 On my last project I had done a Google search and found a StackOverflow article that suggested running this command: `bundle exec rake db:create`, but you really just need to run `rails db:create` before running `rails db:migrate`.
+
 ***
 
 5) When I tried to open the Rails server for the first time, it said something was not defined in my LocationsController as it expected. It turned out that I had `API` capitalized in my LocationsController, and it should have been title cased `Api`.
+
 ***
 
 6) I also found out that I had messed up the project structure--this is kind of a funky project because it’s in between a Rails application (where you use the generated files for front-end and back-end), and a React / Rails application (where you typically have one directory for React, and one directory for Rails.) 
@@ -66,6 +73,7 @@ So you probably want something that looks like this:
    			 index.js
  		 README.md
 ```
+
 ***
 
 7) When I was working on the JS side of things, I kept getting this error: 
@@ -73,6 +81,7 @@ So you probably want something that looks like this:
 Uncaught (in promise) TypeError: Illegal constructor at locations.js:13 at Array.forEach (<anonymous>) at locations.js:13
 ```
 It turns out that I had not loaded Location.js file into my index.html file. (Yikes.) 
+
 ***
 
 8) I really struggled trying to figure out ActiveRecord Associations between my models.
@@ -93,6 +102,7 @@ Avi also referenced these two articles, so I’ve read and bookmarked them--chec
 * [Choosing between Has Many Through and Has and Belongs to Many](https://guides.rubyonrails.org/association_basics.html#choosing-between-has-many-through-and-has-and-belongs-to-many)
 * [Tags from Scratch in Rails](https://www.sitepoint.com/tagging-scratch-rails/)
 
+
 ***
 
 9) One thing I finally put together while I was struggling through ActiveRecord Associations is that when you use `belongs_to` it can only belong to one instance of your model. (I really wish this relationship was called `belongs_to_a`) 
@@ -102,6 +112,7 @@ ModelA has_many :model_bs, but Model B belongs_to *a* :model_a.
 has_many :plural, 
 belongs_to :one
 ```
+
 ***
 
 10) I was really struggling with the backend, even after I had figured out the ActiveRecord Associations, so I hopped in a Study Session with Howard--which I was really excited about, because I’ve heard so many positive things about him since I started, but he always seemed to be a lead in the module ahead of me.
@@ -111,6 +122,7 @@ It turned out that I was missing a foreign key in my database--specifically in m
 **If there is a belongs_to relationship, you need a foreign key in your table.** 
 
 If you think about it, the entry in your database should say: This is photo 123, it belongs to location 67. Makes sense, but I had not put that together before.
+
 ***
 
 11) At this point, I was a little overwhelmed.
@@ -119,6 +131,7 @@ The walkthrough video I watched had one class with one attribute, and I was tryi
 I couldn’t get my seed data to save to my database, so I cut the Tag and LocationTag classes until I could get my Location and Photo classes to behave the way I wanted them to.
 
 (I later read something that explicitly said, "Hey, please don't build horizontally and try to create all of your features at the same time, because it won't work." I wish I had seen that note earlier.)
+
 ***
 
 12) I came back the next day, and started reviewing nested attributes. This was a Rails topic that had gotten pretty rusty for me. This Flatiron lesson really helped:[Nested Attributes Lesson] (https://learn.co/tracks/full-stack-web-development-v8/module-13-rails/section-7-associations-and-rails/basic-nested-forms)
@@ -126,9 +139,11 @@ I couldn’t get my seed data to save to my database, so I cut the Tag and Locat
 I also reworked my seed file, because it was unnecessarily complicated--I had copied the original structure from a lab I had completed, and then implemented it on my last project (where my models had several more attributes.)
 
 I did have a little trouble figuring out how to set up a seed file with nested attributes, but I found [this article on StackOverflow that helped.](https://stackoverflow.com/questions/37734016/how-add-nested-attributes-in-the-seeds-file-rails)
+
 ***
 
 13) After I got my Location and Photo models working, I went back and started rewatching the entire walkthrough video, and I made notes in my code that explained what each function accomplished. I had some questions as to what `.json()` accomplishes*, and [I really liked this explanation.](https://developer.mozilla.org/en-US/docs/Web/API/Body/json)
+
 ***
 
 14) On the JS side of things, my submit button was not saving the form inputs. I kept getting this error:
@@ -141,6 +156,7 @@ So I took a look at my create method in my LocationsController.
 I was running into an issue where I was getting my params back twice. I resolved that issue using pry, and tinkering with the console, but I’m still not exactly sure what was going on there. 
 
 I also forgot that in order to extract the nested attribute from the JSON, I needed to use bracket notation: `params[“location”][“photo”][“url]`--Okay, maybe I didn’t need to use it, but it did seem to be the only thing that worked at the time, and I don’t think I’ve used bracket notation since I worked on my Sinatra project.
+
 *** 
 
 15) When I finally got my back-end to work the way I wanted it to, I realized I needed to add more HTML and CSS to my page. 
@@ -160,10 +176,12 @@ A couple of other notes:
 ...not that I have personal experience with either of those things. 
 
 [This is the walkthrough video I used for my CSS.](https://www.youtube.com/watch?v=v5KzBPUEgGQ)
+
 ***
 
 16) Getting down to the nitty, gritty, I also had to figure out how to generate links to Google Maps with user input coordinates--[this StackOverflow post had my back.](https://stackoverflow.com/questions/30544268/create-google-maps-links-based-on-coordinates)
 `http://www.google.com/maps/place/lat,lng`
+
 ***
 
 17) Okay, so next on the agenda: adding a like button that would update a like count on a click. I added like as an attribute to my Location table, passed it through to my HTML/CSS/JS display. 
@@ -172,9 +190,11 @@ Then I tried to add a button I had found on CodePen. ([This one specifically.](h
 
 It was going pretty well, but I couldn’t figure out why my thumbs up icon was not there--it turns out it was a Font Awesome icon, so I had to make sure I had the correct line in my button HTML text, in this case: `<i class="fas fa-thumbs-up">`, and then I also had to sign up for Font Awesome, and get this script tag to import their icons into my HTML page.
 `<script src="https://kit.fontawesome.com/a8e960d804.js" crossorigin="anonymous"></script>`
+
 ***
 
 18) Because I used a CodePen created by another person, I was curious about how to best credit them--I changed aspects of the pen, but I did not create it. I asked on Twitter to see how to best do this, and I was told that adding it to my ReadMe might be a good plan. [Here is a link on CodePen Licensing.](https://blog.codepen.io/legal/licensing/) I'm still not sure the best way to go about this, so let me know if you have better ideas.
+
 ***
 
 19) When I was trying to add an EventListener for a click, I kept getting this message: 
@@ -188,6 +208,7 @@ at index.js:2
 in my console. This was because when I was trying to set my buttons attribute in `initBindingsandEventListeners`, I was attempting to set the button before any buttons existed (because none of my locations had loaded.)
 
 I was able to set `this.buttons` in my `likeListener()` function, which I called after my fetch request had been made in my `fetchAndLoadLocations` function.
+
 ***
 
 20) When I came to incrementing my like count, I was testing it out with an alert, and was surprised to find that it was concatenating the numbers.
@@ -195,6 +216,7 @@ Using `${e.target.value + 1}`, if 2 was the value of `e.target.value`, my alert 
 
 [I found this article on Stack Overflow](https://stackoverflow.com/questions/14496531/adding-two-numbers-concatenates-them-instead-of-calculating-the-sum) suggesting adding a plus sign in front of a string to make it an integer. That’s pretty nifty. `${+e.target.value + 1}` 
 You can also use `parseInt()` of course, which I think I ended up switching to.
+
 ***
 
 That was a lot, I know--it’s been a real process.
@@ -212,6 +234,7 @@ A few things I would like to address in the future are:
 * I didn't create a User class, but ultimately, it would be nice if you could view a users page to see their contributions / locations.
 
 But for now, the project meets the requirements, and I'm looking forward to wrapping up the rest of the curriculum before I return to improve this project.
+
 ***
 
 *I threw an asterisk in there somewhere, and here's the note meant to accompany it: I thought I understood JavaScript before I started this project. But despite going through the JS module almost two times, I think after this project, I need to go through the curriculum another time, now that I can see how everything works together. I have pretty extensive notes in my code, but I think I'll have to review the JS lessons before I can pass my assessment.
