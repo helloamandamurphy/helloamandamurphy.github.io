@@ -134,7 +134,7 @@ I couldn’t get my seed data to save to my database, so I cut the Tag and Locat
 
 ***
 
-12) I came back the next day, and started reviewing nested attributes. This was a Rails topic that had gotten pretty rusty for me. This Flatiron lesson really helped:[Nested Attributes Lesson] (https://learn.co/tracks/full-stack-web-development-v8/module-13-rails/section-7-associations-and-rails/basic-nested-forms)
+12) I came back the next day, and started reviewing nested attributes. This was a Rails topic that had gotten pretty rusty for me. This Flatiron lesson really helped:[Nested Attributes Lesson](https://learn.co/tracks/full-stack-web-development-v8/module-13-rails/section-7-associations-and-rails/basic-nested-forms)
 
 I also reworked my seed file, because it was unnecessarily complicated--I had copied the original structure from a lab I had completed, and then implemented it on my last project (where my models had several more attributes.)
 
