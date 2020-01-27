@@ -41,6 +41,7 @@ I had no idea what I was doing, installed things incorrectly, and had to install
 ***
 
 3) Once I got that set up, I started with creating my gem. I couldn't get my classes or methods to work. It turns out this was because I was new to using `bundle gem gemname` and didn't realize there was a module that I needed to account for.
+
 ***
 
 4) I started by building my CLI file first--I would create methods that were essentially shells that output test strings, but related to how I wanted the methods to work, and over time I fleshed them out. 
