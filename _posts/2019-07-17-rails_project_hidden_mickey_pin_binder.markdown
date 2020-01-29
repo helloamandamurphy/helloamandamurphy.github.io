@@ -1,43 +1,38 @@
 ---
 layout: post
 title:      "Rails Project: Hidden Mickey Pin Binder"
-date:       2019-07-17 05:53:49 +0000
+date:       2019-07-17 01:53:50 -0400
 permalink:  rails_project_hidden_mickey_pin_binder
 ---
 
-Hey there!
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NW_GtF5zo7A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[View Pin Binder on GitHub](https://github.com/helloamandamurphy/hiddenmickey)
 
-I just completed my first draft of my Rails project, and while I'll talk a little bit about my first Ruby on Rails web application, I also want to share a couple of the challenges I encountered while building this project.
+# Summary
+A digital pin binder for users to keep track of their Disney pin collection.
 
-## My Rails Application
-I wasn't certain what direction I wanted to go with for my Rails application. I considered rebuilding my Sinatra project, because I was really proud of it, but ultimately decided to create a new project inspired by my love of Disney.
+***
 
-I always loved Disney movies, but in 2014, I went to Walt Disney World for the first time. That was the beginning of my love for Disney World.
+# Languages and Tools Used
+Ruby, Ruby on Rails, Google Omniauth, Pry, Bcrypt
 
-### Identifying an Area of Opportunity
-One of my favorite things to do in Disney World is collect pins. For those of you who aren't familiar with pin trading, the Disney parks sell collectible pins that you can purchase. But there's also a second kind of pin you can't buy: Hidden Mickey pins. Hidden Mickey pins have small silver Mickey Mouse silhouettes on them and are released in series to the cast members who work at Disney. The cast members wear their pins on lanyards or pin belts, and are required to trade with any guest who requests a pin trade.
+***
 
-![](https://i.imgur.com/tVN03bY.jpg)
-A photo of my pin lanyard from my first trip to Disney World in 2014.
+# Features
+* Created a Model-Controller-View (MVC) Rails application with Create, Read, Update, and Delete (CRUD) functionality
+* Integrated multiple models using Active Record relationships, scopes, and validations
+* Utilized Google OAuth option for user sign-in
+* Rendered error messages when form requirements were unmet
 
-It usually starts with seeing a pin a cast member is wearing, and trading for that specific pin. On the back of each pin are two numbers: the pin's number in the series / the number of pins in the series. So then you search to complete the set, either by finding similar looking pins--My husband collected a set that were all shaped like neckties; or you take a photo of a paper copy of the pin release that is in a binder at a Pin Trading Station that shows what pins are in the series--we've found this elusive binder once in about ten visits.
+***
 
-So yes, each year, Disneyland and Walt Disney World release several series each quarter, and there are no sites that have all Hidden Mickey Pin series in an official capacity available online. 
+# Obstacles Encountered
 
-I'm no user experience expert, but it seemed like a ripe area of opportunity.
+1) The first issue I ran into was more of a design issue. 
 
-### Learning More
+There are a limited number of pin designs and collections, but there is no comprehensive list or site that displays all Hidden Mickey pins that exist. Some years there are four waves of pins released, some years none are released.
 
-![](https://i.imgur.com/oM1eiWq.jpg)
-Part of our Pin Collection
-
-I did a little Googling and found there was a [Pin Trading Database](https://www.pintradingdb.com/). It exists, but there were a lot of problems I could identify. I had my husband take a look at it, and bless his UX Designer brain--he flinched. I asked if he could come up with a design for an improved site, and he began a diatribe about site mapping, dead pages, information architecture, and how it was antithetical to UX as a field to design something just because he thought it would work. I didn't understand most of what he was saying, but he agreed that we could do some user testing in the future to see what exactly wasn't working on the page, and how to improve it.
-
-He knows what he's talking about, and I'm just here to build things that will lead Disney to either buy a product from me, or better yet, hire me.
-
-![](https://i.imgur.com/G2KcoTw.png)
-
-I identified a few glaring issues with the site to inform how I built my site.
+I did a little Googling and found there was a [Pin Trading Database](https://www.pintradingdb.com/). It exists, but there were a lot of problems I could identify.
 * It included all pins. There are a set number of Hidden Mickey pins, but there are likely an unknowable number of official Disney pins (the kind that are sold in the Parks.)
 * Users created their own pins. Meaning there are likely thousands of duplicate pins in the database. 
 * Identification numbers were based on the database ID numbers, not an officially assigned number.
@@ -56,13 +51,9 @@ And then I did something that was out of character for me: I reached out to a st
 
 I was a little disappointed to find out my idea wasn't new--Disney had the same idea before me, and had determined it wasn't worth the work it took to support the website. (In the words of Mickey Mouse, "Awwww shucks!") But I went ahead and decided to proceed with the project anyway.
 
-*I haven't received the information from the cast member yet, but I'm still crossing my fingers. *
+***
 
-## Making the Thing
-I'll be honest. Sinatra was really easy for me. I completed all of the project requirements two days after I started. Rails was a different story. 
-
-### Using PostgreSQL for the First Time
-After talking to my project coach about what I had planned, he suggested using PostgreSQL so that I could share my Rails project on Heroku once it was complete. That sounded great to me, because it was someting I wanted to do with my Sinatra project as well.
+2) After talking to my project coach about what I had planned, he suggested using PostgreSQL so that I could share my Rails project on Heroku once it was complete. That sounded great to me, because it was someting I wanted to do with my Sinatra project as well.
 
 So I'm typing and building things and creating migrations, but then the migrations...won't migrate.
 I ran `rake db:migrate` and the terminal slings back: 
@@ -84,28 +75,39 @@ So I threw that error into Google and found [this Stack Overflow page](https://s
 
 The Stack Overflow response suggested running this in the command line: `bundle exec rake db:create`. So I ran that, followed by `rake db:migrate` and voila! I had a database.
 
-### My Instance isn't Saving
+I later found that you can just run `db:create` and then `db:migrate` and it does the same thing.
 
-I was hoping that database issue was the only bump in the road, but I was wrong. 
+***
+
+3) I was hoping that database issue was the only bump in the road, but I was wrong. 
 
 I too experienced the classic, "My instance isn't saving" issue.
 
-I had a similar issue in my Sinatra project (I tried to name an instance "request" which is a word we don't touch when building the things.) so I was convinced it was due to naming my instance "pin." (My User model was working just fine.) I went through and changed everything named "pin." It was a total mess, and did not change anything. 
+I had a similar issue in my Sinatra project (I tried to name an instance "request" which is a reserved word we don't use when building the things.) so I was convinced it was due to naming my instance "pin." (My User model was working just fine.) I went through and changed everything named "pin." It was a total mess, and did not change anything. 
 
-I threw up my hands and asked the Slack Gods (the more experienced Flatiron School students) for any advice. One of the students suggested I throw a pry in the create method and run `@pin.errors`. I don't know why I hadn't thought of that, but I had not. I realized my pin instance would not save because I was not assigning a User to @pin in my create method, and I also had neglected to add `user_id` as an attribute on my Pins table. (For anyone not tracking: when you use a belongs_to relationship in your Rails models, it requires that you assign what the instance belongs to in your create method and your table.)
+I threw up my hands and asked the Slack Gods (the more experienced Flatiron School students) for any advice. One of the students suggested I throw a pry in the create method and run `@pin.errors`. I don't know why I hadn't thought of that, but I had not. 
 
-### This Table is Droppin'
+I realized my pin instance would not save because I was not assigning a User to @pin in my create method, and I also had neglected to add `user_id` as an attribute on my Pins table. (For anyone not tracking: when you use a belongs_to relationship in your Rails models, it requires that you assign what the instance belongs to in your create method and your table.)
 
-Call me inexperienced, because this is embarrassing. Once I had resolved my create issue with my Pin instance, I realized I had another issue: all of the users I had created had vanished (or they weren't saving.) It took me a second to realize why. 
+***
+
+4) Call me inexperienced, because this is embarrassing. Once I had resolved my create issue with my Pin instance, I realized I had another issue: all of the users I had created had vanished (or they weren't saving.) It took me a second to realize why. 
 
 When I'm working on a project with no real data, I don't like to add a million migrations to alter a table. I have been running `rake db:drop`, making changes, and then running `rake db:migrate`--all this time, not realizing that when you drop the table...the information in your table goes bye bye.
 
 To save myself time, I created seeds for the first time! That way, every time I dropped the table, I could repopulate the new table with the same information.
+***
 
-#### The Best Resource
-After my instance wouldn't save in the create method, I started watching these walkthrough videos by Flatiron School Technical Coach, Jenn Hansen. I can't emphasize how helpful these videos were--if you're just starting your Rails project, definitely watch them. (It's a lot of information, but I watch them on 1.5x speed and still catch it all.) [You can find her Rails Walkthrough playlist here.](https://www.youtube.com/playlist?list=PLI_-ZfHw8Y6VqNTRKNu8yswERHSqxzNC_)
+5) I struggled with several other issues, but after my instance wouldn't save in the create method, I started watching these walkthrough videos by Flatiron School Technical Coach, Jenn Hansen. I can't emphasize how helpful these videos were--if you're just starting your Rails project, definitely watch them. (It's a lot of information, but I watch them on 1.5x speed and still catch it all.)
 
-## What Next? 
+[You can find her Rails Walkthrough playlist here.](https://www.youtube.com/playlist?list=PLI_-ZfHw8Y6VqNTRKNu8yswERHSqxzNC_)
+
+***
+
+![](https://i.imgur.com/oM1eiWq.jpg)
+Part of our Pin Collection
+
+# What's Next
 I have a few other topics I learned while working on this project, that I'm hoping to write future (more technical) blog posts about including: Omniauth, using enums, and possible nested forms.
 
 As far as my Rails application goes, I would like to:
@@ -116,8 +118,12 @@ As far as my Rails application goes, I would like to:
 * Add trading and selling functionality.
 * Use Devise for sign up and log in.
 
-I am really happy to have completed this project, and look forward to adding JavaScript to it for my next project. (Hopefully I'll have some help from my resident UX student to improve the site as well.) 
-
-You can view [the code here](https://github.com/helloamandamurphy/hiddenmickey), and [the demo here](https://youtu.be/NW_GtF5zo7A). 
-
+Thanks for reading.
 -A
+
+**Connect with Me**
+[GitHub](https://github.com/helloamandamurphy)
+[Intercoastals](https://theintercoastals.com/)
+[Instagram](https://www.instagram.com/intercoastals/)
+[LinkedIn](https://www.linkedin.com/in/helloamandamurphy)
+[Twitter](https://twitter.com/babiescatscode)
